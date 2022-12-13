@@ -28,6 +28,7 @@ priority c =
     Just n  -> n
 
 -- >>> makeGroups ["a","b","c"]
+-- [["a","b","c"]]
 makeGroups :: [String] -> [[String]]
 makeGroups []         = []
 makeGroups (a:b:c:xs) = [a,b,c] : makeGroups xs
