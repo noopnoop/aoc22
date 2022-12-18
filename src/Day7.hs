@@ -34,7 +34,6 @@ doMath fs = minimum $ M.elems $ M.filter (>= 30000000 - unused) directories
   where directories = dirs $ addDirSizes fs
         unused = 70000000 - fromMaybe 0 (M.lookup "/" directories)
 
-
 data State = State FS String
 
 initialState :: State
