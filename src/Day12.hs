@@ -4,7 +4,6 @@ import qualified Data.Array as A
 import Debug.Trace (traceShowM, traceShowId, traceShow)
 import Data.Foldable (find)
 import Data.List (unfoldr)
-import Algebra.Graph.AdjacencyMap
 
 type Square = (Int,Int)
 type HMap   = A.Array Square Char
